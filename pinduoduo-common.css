@@ -1,0 +1,21 @@
+
+*{margin: 0;
+padding:0;}
+
+ul,ol{
+    list-style: none;
+}
+a{text-decoration:none;}
+
+/*!*左浮动*!*/
+.l{float:left;}
+/*!*右浮动*!*/
+.r{float:right;}
+/*清除浮动*/
+.clearfix:after{content:"";
+display:block;
+clear:both;}
+
+/*文字居中*/
+.tc{ text-align: center;}
+.text-color{color:#6c6c6c;}

@@ -1,0 +1,258 @@
+html,body{
+    background: #fafafa;
+}
+.pdd-fixed{
+    position: fixed;
+    bottom:150px;
+    left:150px;
+    width:162px;
+    background: #fff;
+}
+.pdd-app{
+    margin: 8px;
+    padding:20px 15px;
+    border: 2px solid #ffedf1;
+}
+.pdd-app img{
+    width: 100%;
+    height: 100%;
+}
+.pdd-app-desc{
+    line-height: 20px;
+    margin-top:10px;
+    font-size: 14px;
+}
+
+
+.header{
+    z-index: 999;
+    position:fixed;
+    top: 0;
+    left: 0;
+    height: 103px;
+    width: 100%;
+    border-bottom: 4px solid #ed435b;
+    background:#fff;
+}
+
+.header-main{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.logo{width: 180px;
+    height: 100%;
+    margin:18px 0;}
+
+.nav{position:absolute;
+    right: 0;
+    top:50%;
+    height: 30px;
+    margin-top:-15px;
+
+}
+.nav-item{
+    display: inline-block;
+    border-right: 1px solid #6c6c6c;
+    height: 20px;
+    line-height: 20px;
+
+}
+.nav-item a{
+    color: #6c6c6c;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 15px;
+}
+.nav-item:first-child a{
+    margin-left: 0;
+}
+.nav-item:last-child a{
+    margin-right: 0;
+}
+.nav-item:last-child{
+    border-right:none;
+}
+
+.nav-item .nav-active{
+    color: red;
+}
+.banner img{width: 100%;
+    height: 100%;
+    margin-top: 107px;}
+
+/*精彩活动*/
+.body{
+    width: 1200px;
+    margin: 77px auto 30px auto;
+}
+
+.title{
+    border-bottom: 1px solid #c1c1c1;
+    padding-bottom: 17px;
+    margin-top: 55px;
+    margin-bottom: 45px;
+}
+.title-text{
+    font-size: 20px;
+    color: #363636;
+}
+.more{
+    font-size: 18px;
+    margin-right: 5px;
+    cursor:pointer;
+}
+.content>a{
+    float: left;
+    background: #fff;
+    padding: 14px;
+    margin-right: 17px;
+    margin-bottom: 17px;
+}
+.content>a:last-child{
+    margin-right: 0;
+}
+#firstmore{ width: 1200px;
+    height: 100%;}
+
+#lastmore{ width: 270px;
+    height: 180px;}
+
+/*精彩专题*/
+
+.subject img{
+    width:556px;
+    height: 276px;
+}
+
+.goods-group{
+    border: 1px solid #f6f6f6;
+}
+.goods{
+    background: #fff;
+    width:160px;
+    margin:0 12px;
+    position:relative;;
+}
+.goods>img{
+    width:125px;
+    height: 125px;
+    margin: 7px auto;
+    display: block;
+}
+.goods-title{
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+
+.goods-price{
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+}
+.group-price{
+    color: #111;
+    font-size: 16px;
+}
+.price-mark{
+    font-size: 14px;
+    color:#cbcbcb;
+    text-decoration: line-through;
+}
+
+.subject:nth-child(2n){
+    margin-right: 0;
+}
+
+/*底部*/
+
+.pdd-foot{
+    bacground:#fff;
+    padding-top:60px;
+    width: 100%;
+}
+.pdd-foot .pdd-foot-head{
+    margin:0 auto;
+    width:1000px;
+}
+.head-group{
+    width:666px;
+    margin-top:20px;
+}
+
+.group-item{
+    display:inline-block ;
+    width: 162px;
+    margin-right: 40px;
+}
+.group-item img{
+    width:100%;
+    height: 100%;
+}
+
+.group-item p{
+    margin:8px auto;
+    color:#4d4d4d;
+    font-size: 16px;
+    text-align: center;
+}
+.info-title{
+    color: #4d4d4d;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.info-detail{
+    color: #4d4d4d;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 20px;
+}
+
+.head-info {
+    border-left: 1px solid #4d4d4d;
+    padding-left: 40px;
+}
+
+/*底部第二部分*/
+
+.pdd-nav{
+    width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+.pdd-nav-list-item{
+    display: inline-block;
+    border-right: 1px solid #c1c1c1;
+}
+.pdd-nav-list-item a{
+    color: #666;
+    font-size: 16px;
+    margin:0 6px;
+}
+.pdd-nav-list-item:last-child{
+    border-right: none;
+}
+
+/*第三部分*/
+.copyright{
+    background: #3f3e3e;
+    height: 130px;
+    font-size: 14px;
+    text-align: center;
+    color: #b1b1b1;
+}
+.pdd-foot-cr{
+    padding-top:27px;
+}
+.pdd-foot-medicine{
+    padding-top:17px;
+}
+.pdd-foot-record{
+    padding-top: 17px;
+    line-height: 25px;
+}
