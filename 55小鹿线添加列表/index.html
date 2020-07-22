@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	*{margin:0;padding:0;}
+	.u-l{
+		float:left;
+	}
+	.u-r{
+		float: right;
+	}
+	.clearfix:after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+	a{
+		color:#fff;
+		text-decoration: none;
+	}
+	ul{
+		list-style: none;
+	}
+	input{
+		outline: none;
+	}
+	.header{
+		color:#fff;
+		background: #000;
+	}
+	.wrap{
+		width:600px;
+		margin:0 auto;
+	}
+	.add{
+		margin-top:8px;
+	}
+	.add input{
+		padding:3px 8px;
+		border-radius: 8px;
+		border:1px solid #f7f7f7;
+	}
+	.list{
+		margin-top:80px;
+	}
+	.num{
+		font-size:36px;
+		text-align: right;
+	}
+	.list ul li{
+		padding:6px 12px;
+		color:#fff;
+		background: #000;
+		border-left:6px solid orange;
+		border-radius: 6px;
+	}
+	.list ul li + li{
+		margin-top:15px;
+	}
+	</style>
+</head>
+<body>
+
+
+<div class='header'>
+	<div class='wrap clearfix'>
+		<h1 class='u-l'>小鹿线</h1>
+		<div class="u-r add">
+			<input type="" name="" id='txt'>
+			<input type="button" value="添加" id='addBtn'>
+		</div>
+	</div>
+</div>
+
+<div class='g-container'>
+	<div class='wrap'>
+		<div class='list'>
+			<p class='num' id='num'></p>
+			<ul id='uls'>
+				<!-- <li class='clearfix'>
+					<span class='u-l'>你好</span>
+					<a href="" class='u-r'>删除</a>
+				</li> -->
+			</ul>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var txt = document.getElementById('txt'),
+	addBtn = document.getElementById('addBtn'),
+	num = document.getElementById('num'),
+	uls = document.getElementById('uls');
+
+//点击添加按钮操作
+addBtn.onclick = function(){
+	var txtVal = txt.value;
+	if( txtVal=='' ){
+		return ;
+	}
+	//创建li
+	var newLi = document.createElement('li');
+	//添加class类
+	newLi.className='clearfix';
+	//添加内容
+	newLi.innerHTML='<span class="u-l">'+txtVal.trim()+'</span><a href="javascript:;" class="u-r">删除</a>'
+	//把li添加到ul里面
+	uls.appendChild(newLi);
+	//清空input输入框内容
+	txt.value = '';
+	//设置num有几条记录
+	num.innerText = uls.getElementsByTagName('li').length;
+
+	var oA = document.getElementsByTagName('a');
+	var oALen = oA.length;
+	for(var i=0;i<oALen;i++){
+		oA[i].onclick = function(){
+			uls.removeChild(this.parentNode);
+			//设置num有几条记录
+			num.innerText = uls.getElementsByTagName('li').length > 0 ? uls.getElementsByTagName('li').length : '';
+		}
+	}
+
+}
+</script>
+
+
+
+</body>
+</html>
